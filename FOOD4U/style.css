@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://db.onlinewebfonts.com/c/1fbe10678e637530067167465205839f?family=Gabelisa");
+
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1450px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.ali {
+  align-items: center;
+}
+
+.jcs {
+  justify-content: space-between;
+}
+
+.rel {
+  position: relative;
+}
+
+.abp {
+  position: absolute;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+/* Section - 1 */
+
+.section-1 {
+  padding: 0px 10px 0px 10px;
+  background-color: #ffe001;
+  overflow: hidden;
+}
+
+header {
+  padding-block: 40px;
+}
+
+.yellow-panel {
+  z-index: -0;
+  right: 0;
+}
+
+.leaf {
+  top: 200px;
+  left: 110px;
+}
+
+.pasta {
+  top: 200px;
+  left: 730px;
+}
+
+.tomato {
+  left: 800px;
+  bottom: 50px;
+}
+
+.leaf-2 {
+  right: 70px;
+  bottom: 50px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.nav-right {
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.nav-upper-text {
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-links {
+  margin-top: 15px;
+}
+
+.nav-links ul li a {
+  margin: 0px 0px 0px 70px;
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 3px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-content {
+  margin-top: 65px;
+}
+
+.head-main {
+  justify-content: space-around;
+}
+
+.head-content-text {
+  padding: 0px 0px 90px 0px;
+  flex-direction: column;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.head-content-text h2 {
+  font-size: 65px;
+  text-transform: capitalize;
+  font-family: "Gabelisa";
+}
+
+.head-content-text h1 {
+  font-size: 90px;
+  font-weight: 400;
+  font-family: "Fredericka the Great";
+}
+
+.head-content-text h3 {
+  font-size: 27px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.head-content-text p {
+  font-size: 19px;
+  font-weight: 400;
+  font-family: "Fredericka the Great";
+}
+
+.head-content-text h5 {
+  font-size: 57px;
+  font-weight: 400;
+  font-family: "Fredericka the Great";
+  padding: 15px;
+}
+
+.head-content-img img {
+  width: 500px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.head-content-text button {
+  padding: 10px 50px;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Montserrat";
+  background-color: transparent;
+}
+
+/* Section 2 */
+
+.sec-two {
+  padding: 15px 0 30px 0;
+}
+
+.spaghetti {
+  overflow: visible;
+  top: -150px;
+  left: -150px;
+}
+
+.yellow-strip {
+  position: absolute;
+  width: 100%;
+  top: 280px;
+  z-index: -10;
+}
+
+.sec-two-text {
+  padding: 30px 0 10px 0;
+  font-family: "Montserrat";
+}
+
+.sec-two-text h2,
+.sec-three-text h2,
+.sec-5-text h2 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Fredericka the Great";
+}
+
+.sec-two-text p,
+.sec-three-text p {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 17px;
+  width: 75%;
+  font-weight: 400;
+  padding-block: 10px 30px;
+  color: #000000;
+}
+
+.sec-two-cards {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.sec-2-slot {
+  padding: 0px 20px 15px 20px;
+}
+
+.sec-two-box img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 12px 50px rgba(128, 128, 128, 0.699);
+}
+
+.sec-two-cards h2 {
+  margin-top: 25px;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.sec-two-cards p {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 19px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.sec-two-box button {
+  padding: 10px 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #ffe001;
+  margin: 0 25%;
+}
+
+/* Section 3 */
+
+.sec-three {
+  margin-top: 10px;
+  padding: 15px 0 90px 0;
+}
+
+.sec-three-text {
+  padding: 30px 0 10px 0;
+  font-family: "Montserrat";
+}
+
+.sec-three-text h3,
+.sec-5-text h3 {
+  text-align: center;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-family: "Montserrat";
+}
+
+.sec-three-img-content {
+  justify-content: center;
+}
+
+.sec-three-card-img {
+  width: 410px;
+}
+
+.col-40-img {
+  width: 710px;
+  box-shadow: 0px 30px 30px grey;
+}
+
+.sec-three-card-img img {
+  width: 100%;
+}
+
+/* Section - 4 */
+
+.section-four {
+  margin-top: 30px;
+  padding-block: 30px 60px;
+}
+
+.section-4-main {
+  justify-content: center;
+}
+
+.section-4-main img {
+  padding: 0px 15px 15px 0px;
+  width: 100%;
+}
+
+.sec-4-text {
+  color: #ffffff;
+  top: 30px;
+  left: 30px;
+  text-transform: uppercase;
+  font-size: 28px;
+  width: 250px;
+  font-family: "Montserrat";
+}
+
+.sec-4-text h5 {
+  margin-bottom: 12px;
+}
+
+.sec-4-sub {
+  width: 640px;
+}
+
+/* Section 5 */
+
+.sec-5 {
+  padding: 0px 0 90px 0;
+}
+
+.sec-5-text {
+  padding: 30px 0 10px 0;
+  font-family: "Montserrat";
+}
+
+.sec-5-input {
+  justify-content: center;
+}
+
+.sec-5-input input {
+  margin: 20px;
+  width: 350px;
+  padding: 15px 15px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgba(235, 174, 76, 0);
+  border: 1px solid #bebebe;
+}
+
+.sec-5-input button {
+  margin: 20px;
+  padding: 15px 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: #ffe001;
+  width: 350px;
+  border-radius: 5px;
+}
+
+/* Section - 6 */
+.section-6 {
+  padding-top: 50px;
+  background-image: url(../FOOD4U/Assets/footer-bgm.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat";
+}
+
+.sec-6-slot-1 P {
+  margin: 40px 0px 100px 0px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.sec-6-slot-2 p {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.sec-6-slot-2 i {
+  color: #ffe001;
+  font-size: 23px;
+  margin: 5px 10px;
+  display: inline-block;
+}
+
+.social-media {
+  margin-top: 100px;
+}
+
+.social-media i {
+  background-color: #fff;
+  padding: 5px 8px;
+  color: black;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.txt-ali {
+  text-align: right;
+}
