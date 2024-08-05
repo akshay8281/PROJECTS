@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(201, 192, 192);
+      }
+      div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto 0px auto;
+      }
+
+      .container {
+        width: 210px;
+        height: 500px;
+        background-color: rgba(0, 0, 0, 0.924);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 50px;
+      }
+
+      .red {
+        background-color: darkred;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+      }
+      .red:hover {
+        background-color: rgb(243, 31, 31);
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: steps(15);
+      }
+
+      .yellow {
+        background-color: darkorange;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+      }
+      .yellow:hover {
+        background-color: yellow;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: steps(15);
+      }
+      .green {
+        background-color: darkgreen;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+      }
+
+      .green:hover {
+        background-color: greenyellow;
+        cursor: pointer;
+        transition-property: all;
+        transition-duration: 0.4s;
+        transition-timing-function: steps(15);
+      }
+
+      .body {
+        background-color: rgba(57, 7, 7, 0.884);
+        width: 80px;
+        height: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="red"></div>
+      <div class="yellow"></div>
+      <div class="green"></div>
+    </div>
+    <div class="body"></div>
+  </body>
+</html>

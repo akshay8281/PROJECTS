@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.container-2 {
+  width: 1480px;
+  margin: 0 auto;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.container-3 {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.col-20 {
+  width: 20%;
+}
+
+/* Navbar */
+
+header {
+  padding-block: 15px;
+  background-color: #ffffff;
+}
+
+.navbar-section {
+  justify-content: space-between;
+  font-family: "Assistant", sans-serif;
+}
+
+.myntra-logo img {
+  width: 50px;
+}
+
+.nav-link {
+  margin: 0 30px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.nav-header-links ul li {
+  display: inline-block;
+}
+
+/* Searchbar */
+
+.searchicon {
+  padding: 10px;
+}
+
+.nav-inputBar i {
+  position: absolute;
+}
+
+.nav-inputBar input {
+  padding-left: 45px;
+  outline: none;
+}
+
+.nav-Searchinput {
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f6;
+}
+
+.nav-right-side {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.nav-right {
+  margin-right: 30px;
+}
+
+/* Section - 1 */
+
+.sec-1-container {
+  align-items: flex-start;
+  font-family: "Assistant", sans-serif;
+}
+
+.leftBar {
+  width: 450px;
+  background-color: lightskyblue;
+  padding: 0px 10px 10px 10px;
+  flex: 0 0 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.input-buttons {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.leftBar a {
+  display: block;
+  color: #3e4152;
+  transition: background-color 0.3s;
+  font-family: "Assistant", sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  padding-inline: 8px;
+}
+
+.leftBar a:hover {
+  border: 1px solid red;
+}
+
+.sec-1-left-header {
+  justify-content: space-between;
+}
+
+.sec-1-left-header i {
+  background-color: #f5f5f6;
+  font-size: 18px;
+  padding: 7px;
+  border-radius: 50%;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.color-div {
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+}
+
+.white-color {
+  background-color: #ffffff;
+}
+
+.pink-color {
+  background-color: #f1a9c4;
+}
+
+.black-color {
+  background-color: black;
+}
+
+.multi-color {
+  background: linear-gradient(45deg, red, green, white, orange, pink, blue);
+}
+
+.brown-color {
+  background-color: #915039;
+}
+
+.red-color {
+  background-color: red;
+}
+
+.blue-color {
+  background-color: #0074d9;
+}
+
+/* Content */
+
+.content {
+  padding: 20px;
+  font-family: "Assistant", sans-serif;
+  width: 50%;
+}
+
+
+.product-card i {
+  margin-inline: 5px;
+  font-size: 12px;
+  color: darkgreen;
+}
+
+.product-card img {
+  width: 100%;
+}
+
+.pCard-header {
+  margin-top: 18px;
+}
+
+.pCard-detail {
+  font-size: 14px;
+}
+
+.pCard-rate {
+  align-items: end;
+}
+
+.pCard-disc {
+  margin-left: 10px;
+  font-size: 14px;
+}

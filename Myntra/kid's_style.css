@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.container-2 {
+  width: 1480px;
+  margin: 0 auto;
+}
+
+.container-3 {
+  width: 1180px;
+  margin: 0 auto;
+}
+
+.col-10 {
+  width: 10%;
+}
+/* Navbar */
+
+header {
+  padding-block: 15px;
+  background-color: #ffffff;
+}
+
+.navbar-section {
+  justify-content: space-between;
+  font-family: "Assistant", sans-serif;
+}
+
+.myntra-logo img {
+  width: 50px;
+}
+
+.nav-link {
+  margin: 0 30px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.nav-header-links ul li {
+  display: inline-block;
+}
+
+/* Searchbar */
+
+.searchicon {
+  padding: 10px;
+}
+
+.nav-inputBar i {
+  position: absolute;
+}
+
+.nav-inputBar input {
+  padding-left: 45px;
+  outline: none;
+}
+
+.nav-Searchinput {
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f5f5f6;
+}
+
+.nav-right-side {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: #282c3f;
+}
+
+.nav-right {
+  margin-right: 30px;
+}
+
+/* Section - 2 */
+
+.section-2 {
+  margin-block: 20px;
+}
+
+.header-banner {
+  width: 1550px;
+  margin: 0 auto;
+}
+
+.header-banner img {
+  width: 100%;
+}
+
+/* Section - 3 */
+
+.section-3 {
+  padding: 30px 10px 50px 10px;
+}
+
+.section-3-head h2 {
+  padding: 50px 50px 70px 50px;
+  font-size: 28px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.sec-3-round-cards {
+  width: 1480px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sec-3-round-cards img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgb(202, 202, 202);
+}
+
+/* Section - 4 */
+
+.section-4 {
+  padding: 30px 0px 50px 0px;
+}
+
+.section-4-head h2 {
+  padding: 50px 50px 70px 50px;
+  font-size: 28px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.sec-4-round-cards {
+  justify-content: center;
+}
+
+.sec-4-round-cards img {
+  width: 100%;
+  box-shadow: 0px 0px 10px rgb(202, 202, 202);
+}
+
+/* Section - 5 */
+
+.section-5 {
+  padding: 0px 0px 50px 0px;
+}
+
+.section-5-head h2 {
+  padding: 50px 50px 70px 50px;
+  font-size: 28px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.sec-5-round-cards {
+  margin: 0 auto;
+  width: 3050px;
+}
+
+.sec-5-round-cards img {
+  width: 100%;
+  box-shadow: 0px 0px 10px rgb(202, 202, 202);
+}
+
+/* Section - 6 */
+
+.section-6 {
+  padding: 30px 10px 50px 10px;
+}
+
+.section-6-head h2 {
+  padding: 0px 50px 70px 50px;
+  font-size: 28px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.sec-6-cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.sec-6-cards img {
+  width: 100%;
+}
+
+.brand {
+  width: 20%;
+}
+
+/* Section - 7 */
+
+.section-7 {
+  padding: 30px 10px 50px 10px;
+}
+
+.section-7-head h2 {
+  padding: 0px 50px 70px 50px;
+  font-size: 28px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.sec-7-cards {
+  flex-wrap: wrap;
+  width: 1850px;
+  margin: 0 auto;
+}
+
+.sec-7-cards img {
+  width: 100%;
+}
+
+.explore {
+  width: 40%;
+}
+
+/* Section - 7 */
+
+.section-8 {
+  padding: 30px 10px 50px 10px;
+}
+
+.section-8-head h2 {
+  padding: 0px 50px 70px 50px;
+  font-size: 28px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.sec-8-cards {
+  flex-wrap: wrap;
+  width: 1900px;
+  margin: 0 auto;
+}
+
+.sec-8-cards img {
+  width: 100%;
+}
+
+.kids-space {
+  width: 40%;
+}
+
+/* Section - 9 */
+
+.section-9 {
+  padding: 30px 10px 50px 10px;
+}
+
+.section-9-head h2 {
+  padding: 0px 50px 70px 50px;
+  font-size: 28px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.sec-9-cards {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.sec-9-cards img {
+  width: 100%;
+}
+
+.budget {
+  width: 15%;
+}
+
+/* Section - 10 */
+
+.section-10 {
+  padding: 30px 10px 50px 10px;
+}
+
+.section-10-head h2 {
+  padding: 50px 50px 70px 50px;
+  font-size: 28px;
+  font-family: "Assistant", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 900;
+}
+
+.sec-10-round-cards {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.sec-10-round-cards img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgb(202, 202, 202);
+}
+
+.shop {
+  margin: 0px 50px 0px 0px;
+  /* width: 20%; */
+}
+
+/* Footer */
+
+footer {
+  margin-top: 20px;
+  padding-block: 30px;
+  padding-inline: 50px;
+}
+
+.footer-slots {
+  justify-content: space-between;
+  align-items: start;
+}
+
+.head {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Assistant", sans-serif;
+}
+
+.slot-text {
+  margin-top: 30px;
+  font-size: 16px;
+  font-family: "Assistant", sans-serif;
+}
+
+.sub-slot {
+  margin-top: 30px;
+}
+
+.slot-text ul li {
+  margin-top: 6px;
+  color: grey;
+}
+
+.slot-3 {
+  padding-right: 150px;
+}
+
+.store {
+  margin-top: 30px;
+  width: 100px;
+}
+
+.store-img {
+  width: 140px;
+  margin-right: 10px;
+}
+
+.social-media {
+  margin-top: 20px;
+}
+
+.social-media a {
+  margin-right: 20px;
+  font-size: 25px;
+  color: grey;
+}
+
+/* Slot - 4 */
+
+.slot-4 img {
+  width: 50px;
+  margin-right: 15px;
+}
+
+.tag {
+  margin-bottom: 20px;
+}
+
+.slot-4 {
+  font-family: "Assistant", sans-serif;
+}
+
+.slot-4 p {
+  width: 70%;
+}
