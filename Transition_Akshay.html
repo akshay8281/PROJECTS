@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /*Hero*/
+      .hero-image {
+        position: relative;
+        width: 100%;
+        height: 80vh; /*windows viewport height*/
+        overflow: hidden; /*scroll bar*/
+        background-size: cover;
+      }
+
+      /*text on hero*/
+
+      .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(
+          -50%,
+          -50%
+        ); /*Vertically and horizontally centered*/
+        overflow: hidden;
+        text-align: center;
+        color: darkgoldenrod;
+        font-weight: 700; /*thick/thin*/
+        text-shadow: 0 0 3px darkseagreen;
+        animation: text 3s 1;
+      }
+      .container h1 {
+        font-size:100px;
+        letter-spacing: 0.2em;
+        animation: text 3s 1;
+      }
+      @keyframes text {
+        0% {
+          /* color: black; */
+          color: darkolivegreen;
+          font-size: 120px;
+          margin-bottom: -20px;
+        }
+        30% {
+          letter-spacing: 25px;
+          margin-bottom: -20px;
+          font-size: 100px;
+
+        }
+        85% {
+          letter-spacing: 8px;
+          margin-bottom: -20px;
+          font-size: 100px;
+
+        }
+      }
+      .des {
+        /* margin: 20px; */
+        display: block;
+        font-size: 60px;
+        text-shadow: 0 0 2px black;
+      }
+
+      .flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .DATA {
+        margin-right: 50px;
+      }
+
+      #coder {
+        color: darkgreen;
+      }
+
+      #trader {
+        color: darkgray;
+      }
+
+      #marketor {
+        color: darkorange;
+      }
+      body {
+        background-image: url(https://images.unsplash.com/photo-1532190761747-215949f288d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGFyayUyMGJsdXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        font-family: 'Philosopher', sans-serif;
+      }
+    </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="box-container">
+      <div class="hero-image">
+        <div class="container">
+          <h1><span>Akshay Pitroda</span></h1>
+
+          <div class="des flex">
+            <div id="coder" class="DATA">#CODER</div>
+            <div id="trader" class="DATA">#TRADER</div>
+            <div id="marketor" class="DATA">#MARKETOR</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
