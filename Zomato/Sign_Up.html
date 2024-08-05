@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Okra, Helvetica, sans-serif;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1 {
+        font-size: 35px;
+      }
+
+      .signup {
+        height: 500px;
+        width: 500px;
+        margin: 8% auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 35px;
+      }
+
+      .input-box {
+        display: inline-block;
+        height: 50px;
+        margin-block: 10px;
+      }
+
+      input {
+        padding-left: 20px;
+        font-size: 20px;
+      }
+
+      .input-details {
+        flex-direction: column;
+        margin-top: 20px;
+      }
+
+      .checkBox-container {
+        margin-block: 20px;
+      }
+
+      input.input-checkBox {
+        width: 20px;
+        height: 20px;
+      }
+
+      .checkBox-container a {
+        color: #e23744;
+      }
+
+      .input-checkBox {
+        margin-right: 10px;
+      }
+
+      .GoogleLogo {
+        width: 25px;
+      }
+
+      button {
+        width: 430px;
+        height: 40px;
+        font-size: 17px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .Or-Text {
+        text-align: center;
+        margin-block: 10px;
+      }
+
+      .signup-bottom-login {
+        color: #e23744;
+      }
+
+      .bottom-p-tag {
+        margin-top: 15px;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="signup">
+      <div class="signup-container">
+        <h1>Sign Up</h1>
+
+        <div class="input-details flex">
+          <input class="input-box" type="text" placeholder="Full Name" />
+          <input class="input-box" type="email" placeholder="Email" />
+        </div>
+
+        <div class="checkBox-container flex">
+          <input class="input-checkBox" type="checkbox" />
+          <p>
+            I agree to Zomato's
+            <a href="#">Terms of Service, Privacy Policy</a> and
+            <a href="#">Content Policies</a>
+          </p>
+        </div>
+
+        <button>Create Account</button>
+
+        <h3 class="Or-Text">Or</h3>
+
+        <button class="google-button flex">
+          <img
+            class="GoogleLogo"
+            src="./Assets_2/GoogleLogo.png"
+            alt="GoogleLogo"
+          />Continue with Google
+        </button>
+
+        <p class="bottom-p-tag">
+          Already have an account?
+          <a class="signup-bottom-login" href="#">Login</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

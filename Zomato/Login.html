@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Okra, Helvetica, sans-serif;
+      }
+
+      .login-section {
+        height: 500px;
+        width: 450px;
+        border-radius: 8px;
+        justify-content: center;
+        background-color: white;
+        margin: 8% auto;
+        border: 2px solid black;
+      }
+
+      .login-container {
+        flex-direction: column;
+      }
+
+      .Login-text {
+        font-size: 40px;
+      }
+
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+
+      .country-code {
+        width: 100px;
+        height: 40px;
+        text-align: right;
+        padding-right: 5px;
+        border: 1px solid rgb(171, 165, 165);
+        border-right: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+      }
+      .contactBar {
+        margin-block: 30px;
+        margin-left: -7px;
+        width: 220px;
+        height: 40px;
+        border: 1px solid rgb(171, 165, 165);
+        border-left: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+
+      input {
+        padding-left: 10px;
+        border-left: none;
+      }
+
+      .btn-login {
+        flex-direction: column;
+      }
+
+      button {
+        width: 320px;
+        height: 40px;
+        font-size: 17px;
+        border-radius: 5px;
+        border: 1px solid rgb(171, 165, 165);
+      }
+
+      .OTP {
+        margin-bottom: 20px;
+        background-color: #e23744;
+        color: white;
+      }
+
+      .Email-button {
+        margin-block: 20px;
+        justify-content: center;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      .mail-icon {
+        color: red;
+        font-size: 20px;
+        margin-right: 10px;
+      }
+
+      .google-button {
+        justify-content: center;
+      }
+
+      .GoogleLogo {
+        width: 25px;
+        margin-right: 5px;
+      }
+
+      .login-bottom-section {
+        margin-top: 60px;
+        font-size: 18px;
+      }
+
+      .createAccount {
+        color: #e23744;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="login-section flex">
+      <div class="login-container flex">
+        <h1 class="Login-text">Login</h1>
+
+        <div class="input-tel">
+          <span>
+            <select name="" class="country-code">
+              <option value="+91">+91</option>
+              <option value="+93">+93</option>
+              <option value="+355">+355</option>
+              <option value="+213">+213</option>
+              <option value="+1684">+1684</option>
+            </select>
+          </span>
+          <input class="contactBar" type="text" placeholder="Phone Number" />
+        </div>
+
+        <div class="btn-login flex">
+          <button class="OTP">Send One Time Password</button>
+
+          <p>or</p>
+
+          <button class="Email-button flex">
+            <i class="mail-icon fa-solid fa-envelope"></i> Continue with Email
+          </button>
+
+          <button class="google-button flex">
+            <img
+              class="GoogleLogo"
+              src="./Assets_2/GoogleLogo.png"
+              alt="GoogleLogo"
+            />Continue with Google
+          </button>
+        </div>
+
+        <div class="login-bottom-section flex">
+          <h4>New to Zomato?</h4>
+          <a class="createAccount" href="#">Create Account</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
