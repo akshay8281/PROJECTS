@@ -1,0 +1,593 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Assistant&family=Montserrat:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+.container {
+  width: 1390px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.ali {
+  align-items: center;
+}
+
+.jcs {
+  justify-content: space-between;
+}
+
+.po-rel {
+  position: relative;
+}
+
+.po-ab {
+  position: absolute;
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.col-60 {
+  width: 60%;
+}
+.col-15 {
+  width: 15%;
+}
+.col-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.links ul li {
+  display: inline-block;
+  margin: 0 0 0 90px;
+}
+
+/* Navbar */
+
+.section-one {
+  background-image: url(../FoodMart/Assets/Home_page.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.top-head {
+  padding: 40px 0;
+}
+
+.links a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 25px;
+  font-family: "Montserrat";
+}
+
+.logo {
+  width: 80px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.home-section {
+  padding: 80px 0 100px 0;
+}
+
+.main-home-text {
+  padding: 0 0 100px 0;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.main-home-text h1 {
+  text-transform: uppercase;
+  font-size: 100px;
+  color: white;
+  font-weight: 700;
+}
+
+.main-home-text p {
+  width: 60%;
+  font-size: 25px;
+  color: white;
+  margin: 30px auto;
+}
+
+.sec-1-btn,
+.sec-3-btn,
+.sec-5-btn {
+  margin-top: 50px;
+  padding: 15px 80px;
+  background-color: #f6d365;
+  font-size: 20px;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Section 2 */
+
+.s2-d1 {
+  top: 100px;
+  left: -80px;
+}
+.s2-d2 {
+  top: 80px;
+  left: 280px;
+  width: 100px;
+}
+.s2-d3 {
+  right: 350px;
+  top: 40px;
+  width: 70px;
+}
+.s2-d4 {
+  right: 100px;
+  top: 100px;
+  width: 190px;
+}
+.s2-d5 {
+  bottom: 130px;
+  left: 100px;
+}
+.s2-d6 {
+  bottom: 60px;
+  left: 530px;
+}
+.s2-d7 {
+  bottom: 60px;
+  right: 530px;
+}
+.s2-d8 {
+  bottom: 80px;
+  right: -80px;
+}
+
+.sec-two,
+.sec-4,
+.sec-7 {
+  background-color: #f6d365;
+  padding: 20px 0 70px 0;
+  overflow: hidden;
+}
+
+.sec-two-text,
+.sec-4-text,
+.sec-7-text {
+  padding: 40px 0;
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+.sec-two-text h2,
+.sec-4-text h2,
+.sec-7-text h2 {
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sec-two-text p,
+.sec-4-text p,
+.sec-7-text p {
+  font-size: 30px;
+  margin: 10px auto;
+  width: 60%;
+  color: #333333;
+  font-weight: 400;
+  padding-block: 10px 30px;
+}
+
+.sec-two-cards,
+.sec-4-cards {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0px 20px 50px 20px;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.sec-two-cards img {
+  width: 100%;
+}
+
+.sec-two-cards h2 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.sec-two-cards p {
+  width: 90%;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 19px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+/* Section 3  */
+
+.s3-d1 {
+  width: 160px;
+}
+.s3-d2 {
+  left: 600px;
+  width: 90px;
+}
+.s3-d3 {
+  right: 580px;
+  top: 50px;
+  width: 60px;
+}
+.s3-d4 {
+  top: -100px;
+  right: -70px;
+  width: 250px;
+}
+.s3-d5 {
+  right: 110px;
+  top: 200px;
+}
+.s3-d6 {
+  bottom: 150px;
+  left: 50px;
+  width: 60px;
+}
+.s3-d7 {
+  bottom: 170px;
+  left: 600px;
+  width: 60px;
+}
+.s3-d8 {
+  bottom: 60px;
+  right: 550px;
+  width: 100px;
+}
+.s3-d9 {
+  bottom: 73px;
+  right: 80px;
+  width: 170px;
+}
+
+.section-3,
+.section-5 {
+  background-color: #333333;
+  padding-block: 85px;
+  overflow: hidden;
+}
+
+.section-3-main,
+.section-5-main {
+  padding: 0px 70px 0px 70px;
+}
+
+.sec-3-hero-img,
+.sec-5-hero-img {
+  width: 420px;
+}
+
+.sec-3-hero-img img,
+.sec-5-hero-img img {
+  width: 100%;
+}
+
+.sec-3-text {
+  padding: 10px 0px 10px 90px;
+}
+
+.sec-3-text,
+.sec-5-text {
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec-3-text h3,
+.sec-5-text h3 {
+  color: white;
+  font-size: 60px;
+  margin: 20px 0;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.sec-3-text p,
+.sec-5-text p {
+  color: white;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+/* Section - 4 */
+
+.s4-d1 {
+  top: 5px;
+  left: 150px;
+}
+.s4-d2 {
+  top: 20px;
+  left: 320px;
+}
+.s4-d3 {
+  right: 380px;
+  top: 20px;
+}
+.s4-d4 {
+  right: 50px;
+  top: 40px;
+}
+.s4-d5 {
+  left: 100px;
+  top: 200px;
+}
+.s4-d6 {
+  bottom: 50px;
+  left: 150px;
+}
+.s4-d7 {
+  bottom: 20px;
+  left: 450px;
+}
+.s4-d8 {
+  bottom: 20px;
+  right: 530px;
+}
+.s4-d9 {
+  right: 100px;
+  bottom: 30px;
+}
+
+.sec-4-cards h2 {
+  font-size: 90px;
+}
+
+.sec-4-cards h4 {
+  margin-top: 20px;
+  text-transform: uppercase;
+  font-size: 35px;
+}
+
+.box-slab {
+  border: 10px solid black;
+  width: 320px;
+  height: 320px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Section 5  */
+
+.s5-d1 {
+  top: 20px;
+  left: 40px;
+  width: 170px;
+}
+.s5-d2 {
+  left: 500px;
+}
+.s5-d3 {
+  right: 600px;
+}
+.s5-d4 {
+  top: 0;
+  right: -20px;
+}
+.s5-d5 {
+  top: 330px;
+  left: -35px;
+  width: 70px;
+}
+.s5-d6 {
+  top: 330px;
+  right: 30px;
+}
+
+.s5-d7 {
+  bottom: 50px;
+  left: 50px;
+  width: 200px;
+}
+.s5-d8 {
+  left: 350px;
+  bottom: 70px;
+  width: 100px;
+}
+.s5-d9 {
+  right: 570px;
+  bottom: 170px;
+}
+.s5-d10 {
+  bottom: 50px;
+  right: 50px;
+  width: 200px;
+}
+
+/* .section-5 {
+
+/* Section - 6*/
+
+.section-6 {
+  background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.778),
+      rgba(255, 255, 255, 0.471)
+    ),
+    url("../FoodMart/Assets/Home_page.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-block: 20px;
+}
+
+.sec-6-main {
+  padding-block: 100px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.sec-6-main p {
+  margin-block: 60px;
+  font-size: 30px;
+}
+
+.sec-6-main h3 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+/* Section -7 */
+
+.s7-d1 {
+  top: 150px;
+  left: 100px;
+}
+
+.s7-d2 {
+  top: 60px;
+  left: 650px;
+  width: 100px;
+}
+.s7-d3 {
+  top: -90px;
+  right: 50px;
+}
+.s7-d4 {
+  bottom: 400px;
+  right: 90px;
+}
+
+.s7-d5 {
+  left: 70px;
+  bottom: 40px;
+}
+.s7-d6 {
+  left: 270px;
+  bottom: 150px;
+  width: 170px;
+}
+.s7-d7 {
+  left: 550px;
+  bottom: -70px;
+  width: 200px;
+}
+.s7-d8 {
+  bottom: 70px;
+  right: 500px;
+}
+.s7-d9 {
+  bottom: 70px;
+  right: 200px;
+  width: 180px;
+}
+
+.sec-7 {
+  padding: 80px 0 30px 0;
+}
+
+.sec-7-text {
+  padding: 60px 0;
+  font-family: "Montserrat";
+}
+
+.sec-7-text h2 {
+  padding-block: 30px;
+  margin-top: 20px;
+}
+
+.sec-7-text p {
+  padding: 10px 0px 10px 0px;
+}
+
+.sec-7-input {
+  justify-content: center;
+  padding: 0px 0 100px 0;
+  margin-bottom: 100px;
+}
+
+.sec-7-input input {
+  width: 550px;
+  padding: 15px 12px 15px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+.sec-7-input button {
+  padding: 12px 40px;
+  text-transform: uppercase;
+  background-color: #333333;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: #333333;
+  padding-block: 90px;
+}
+.footer-main-section {
+  align-items: flex-start;
+  margin-block: 90px;
+}
+
+.footer-main-section h4 {
+  font-size: 31px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+  padding: 5px 10px;
+  margin-block: 90px 25px;
+}
+
+.footer-main-section p,
+.foot-links ul li {
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+  margin-block: 12px;
+  padding: 5px 10px;
+}
+
+.social-media li {
+  margin: 10px 20px 0px 0px;
+  padding: 5px 8px;
+  color: black;
+  font-size: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
