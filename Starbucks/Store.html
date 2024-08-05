@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link rel="stylesheet" href="StoreCSS.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+        <!-- NavBar -->
+
+        <nav>
+          <div class="nav-header container flex">
+            <div class="nav-left-corner flex">
+              <div class="nav-logo">
+                <a href="#"
+                  ><img class="StarLogo" src="./Assets/StarLogo.png" alt="Logo"
+                /></a>
+              </div>
+    
+              <div class="nav-header-links">
+                <ul class="nav-links flex">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./Gift.html">Gift</a></li>
+                  <li><a href="./Order.html">Order</a></li>
+                  <li><a href="./Pay.html">Pay</a></li>
+                  <li><a href="./Store.html">Store</a></li>
+                </ul>
+              </div>
+            </div>
+    
+            <div class="nav-right-corner flex">
+              <div class="nav-input-main-header flex">
+                <div class="input-icons">
+                  <i class="search-icon fa-solid fa-magnifying-glass"></i>
+    
+                  <input
+                    class="searchBar"
+                    type="text"
+                    placeholder="Looking for Something specific"
+                  />
+                </div>
+              </div>
+    
+              <div class="nav-profile-logo-container">
+                <a href="./Profile.html"
+                  ><img
+                    class="Nav-profile-logo"
+                    src=".//Assets/ProfileLogo.png"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    <!-- Store and Iframe Section -->
+
+    <section class="store-section">
+      <div class="container">
+        <div class="left-store-container">
+          <div class="left-store-input-header flex">
+            <div class="left-input-icons">
+              <i class="left-search-icon fa-solid fa-magnifying-glass"></i>
+
+              <input
+                class="left-store-searchBar"
+                type="text"
+                placeholder="Looking for Something specific"
+              />
+            </div>
+          </div>
+
+          <!-- BoxCard -->
+
+          <div class="small-boxcards-slabs flex">
+            <div class="small-card-container-box">
+              <div class="sub-small-boxes flex">
+                <img
+                  class="sub-small-box-img"
+                  src="./Assets/Store_Image_.jpg"
+                  alt=""
+                />
+
+                <div class="sub-small-div flex">
+                  <h4>CG Road Manor Maxx</h4>
+                  <p>21 kms away . Open</p>
+                  <p><i class="fa-solid fa-utensils"></i></p>
+                </div>
+              </div>
+
+              <div class="offer flex">
+                <h3><i class="fa-solid fa-car"></i>9 mins drive</h3>
+                <button class="Add-item">Show Direction</button>
+              </div>
+            </div>
+
+            <!-- box 2 -->
+
+            <div class="small-card-container-box">
+              <div class="sub-small-boxes flex">
+                <img
+                  class="sub-small-box-img"
+                  src="./Assets/Store_Image_.jpg"
+                  alt=""
+                />
+
+                <div class="sub-small-div flex">
+                  <h4>Ahmedabad One Vastrapur</h4>
+                  <p>5.50 kms away . Open</p>
+                  <p>
+                    <i class="fa-solid fa-utensils"></i>
+                    <i class="fa-solid fa-wifi"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="offer flex">
+                <h3><i class="fa-solid fa-car"></i>15 mins drive</h3>
+                <button class="Add-item">Show Direction</button>
+              </div>
+            </div>
+
+            <!-- Box 3 -->
+
+            <div class="small-card-container-box">
+              <div class="sub-small-boxes flex">
+                <img
+                  class="sub-small-box-img"
+                  src="./Assets/Store_Image_.jpg"
+                  alt=""
+                />
+
+                <div class="sub-small-div flex">
+                  <h4>Uniza Bodakdev</h4>
+                  <p>7.45 kms away . Open</p>
+                  <p>
+                    <i class="fa-solid fa-utensils"></i
+                    ><i class="fa-solid fa-wifi"></i>
+                  </p>
+                </div>
+              </div>
+
+              <div class="offer flex">
+                <h3><i class="fa-solid fa-car"></i>20 mins drive</h3>
+                <button class="Add-item">Show Direction</button>
+              </div>
+            </div>
+
+<!-- box 4 -->
+
+<div class="small-card-container-box">
+  <div class="sub-small-boxes flex">
+    <img
+      class="sub-small-box-img"
+      src="./Assets/Store_Image_.jpg"
+      alt=""
+    />
+
+    <div class="sub-small-div flex">
+      <h4>Prahlad Nagar Ahmedabad</h4>
+      <p>7.53 kms away . Open</p>
+      <p>
+        <i class="fa-solid fa-utensils"></i
+        ><i class="fa-solid fa-wifi"></i>
+      </p>
+    </div>
+  </div>
+
+  <div class="offer flex">
+    <h3><i class="fa-solid fa-car"></i>20 mins drive</h3>
+      <button class="Add-item">Show Direction</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Map Iframe -->
+
+        <section class="right-store-container">
+          <div class="map-navigation">
+            <iframe
+              class="map-iframe"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3777455.8532868726!2d68.67868766295739!3d22.394307847960395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959051f5f0ef795%3A0x861bd887ed54522e!2sGujarat!5e0!3m2!1sen!2sin!4v1693747832810!5m2!1sen!2sin"
+              width="850"
+              height="550"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+
+    </div>
+
+      </div>
+    </section>
+  </body>
+</html>

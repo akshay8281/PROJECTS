@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+/* NavBar */
+
+nav {
+  padding-block: 12px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 5;
+}
+
+.nav-header {
+  justify-content: space-between;
+}
+
+.nav-header a {
+  color: rgb(125, 123, 123);
+}
+
+.StarLogo {
+  width: 2.5rem;
+}
+
+.nav-links li a {
+  padding: 2px 12px 10px 12px;
+  margin-left: 40px;
+}
+
+.nav-links li :focus {
+  padding: 2px 12px 10px 12px;
+  border-bottom: 2px solid darkgreen;
+  font-weight: 600;
+}
+
+.nav-header-links ul {
+  font-size: 17px;
+}
+
+.nav-input-main-header {
+  margin-right: 100px;
+  max-width: 400px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.search-icon {
+  padding: 10px;
+  min-width: 40px;
+  font-size: 18px;
+  color: rgb(189, 188, 188);
+}
+
+.searchBar {
+  border-radius: 50px;
+  width: 260px;
+  height: 38px;
+  padding-block: 15px;
+  padding-left: 40px;
+  box-shadow: 0px 0px 3px 0.1px rgb(189, 188, 188);
+  border: none;
+}
+
+.nav-right-corner {
+  flex-basis: 300px;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-right-corner input {
+  padding-left: 40px;
+}
+
+.nav-right-corner ::placeholder {
+  color: rgb(189, 188, 188);
+}
+
+.nav-profile-logo-container {
+  padding-right: 5px;
+}
+
+.Nav-profile-logo {
+  width: 30px;
+}
+
+/* Hero-Header */
+
+.order-hero-header {
+  margin-top: 30px;
+  background-color: #0e382c;
+  padding-block: 35px;
+}
+
+.order-container {
+  justify-content: flex-start;
+}
+
+.order-location {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.order-selection {
+  width: 280px;
+  height: 35px;
+  font-size: 18px;
+  padding: 10px 5px;
+  border: none;
+  border-bottom: 2px solid white;
+  margin-right: 20px;
+}
+
+.order-container input {
+  background-color: #0e382c;
+  color: rgb(203, 184, 184);
+}
+
+.order-clock {
+  width: 20px;
+  margin-right: 8px;
+}
+
+.order-container p {
+  color: white;
+}
+
+/* SLider-Buttons */
+
+.slider-sub-buttons {
+  background-color: #f2f0eb;
+  padding-block: 20px 2px;
+}
+
+.slider-nav-links li {
+  margin-right: 100px;
+  display: inline-block;
+}
+
+.slider-nav-links li a {
+  color: grey;
+  font-size: 15px;
+}
+
+.slider-nav-links li :focus {
+  color: darkgreen;
+  font-weight: 550;
+  border-bottom: 2px solid darkgreen;
+  padding-bottom: 15px;
+}
+
+.slider-nav-links li :hover {
+  padding-bottom: 15px;
+}
+
+.slider-nav-links li :after {
+  border-bottom: 2px solid darkgreen;
+  padding-bottom: 15px;
+  display: block;
+  content: "";
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.slider-nav-links li :hover:after {
+  transform: scaleX(1);
+}
+
+/* Small-BoxCard */
+
+.sub-navtab-header-section {
+  margin-top: 70px;
+}
+
+.sub-navtab-header {
+  margin-block: 10px;
+}
+
+.sub-navtab-header-section p {
+  color: grey;
+  font-size: 13px;
+}
+
+.small-boxcards-slabs {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.small-card-container-box {
+  flex-direction: column;
+  max-width: 32%;
+  width: 500px;
+  height: 16rem;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  padding: 15px 10px;
+  align-items: flex-start;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px 0.8px rgb(191, 190, 190);
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  position: relative;
+  transition: 0.2s 0s ease-in-out;
+}
+
+.small-card-container-box:hover {
+  box-shadow: 0px 3px 15px 3px #a7a7a7;
+}
+
+.sub-small-div {
+  padding-left: 15px;
+}
+
+.sub-small-div h3 {
+  margin-block: 10px;
+}
+
+.sub-small-div p {
+  margin-block: 10px;
+}
+
+.sub-small-box-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.offer {
+  position: absolute;
+  bottom: 20px;
+}
+
+.offer i {
+  margin-right: 8px;
+  margin-left: 80px;
+}
+
+.Add-item {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: grey;
+  color: white;
+  margin-left: 80px;
+}
+/* FOOTER */
+
+footer {
+  margin-top: 100px;
+  padding-block: 10px;
+  background-color: #f9f9f9;
+}
+
+.footer-section p {
+  margin-block: 10px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .flex {
+        display: flex;
+      }
+
+      body {
+        padding: 15vh 28vw;
+      }
+
+      a {
+        color: darkgreen;
+      }
+
+      .login {
+        width: 650px;
+        height: 460px;
+        flex-direction: column;
+        padding: 30px;
+        border: 2px solid black;
+        border-radius: 30px;
+      }
+
+      .skip-tag {
+        text-align: end;
+      }
+
+      .login h1 {
+        margin-block: 10px;
+        font-size: 28px;
+      }
+
+      .login-details {
+        flex-direction: column;
+      }
+
+      label {
+        margin-block: 10px;
+        font-size: 16px;
+      }
+
+      input {
+        height: 30px;
+        padding: 5px 20px;
+        border: none;
+        border-bottom: 1px solid black;
+        outline: none;
+        font-size: 15px;
+      }
+
+      .password-label {
+        margin-top: 30px;
+      }
+
+      .signup {
+        margin-top: 30px;
+      }
+
+      .login-btn {
+        padding: 10px 20px;
+        width: 300px;
+        justify-content: center;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-inline: auto;
+        border: none;
+        background-color: rgb(194, 190, 190);
+        color: white;
+        font-weight: 800;
+      }
+
+      .Get-help {
+        margin: 30px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="login flex">
+      <a class="skip-tag" href="#">Skip</a>
+      <h1>Login</h1>
+      <div class="login-details flex">
+        <label for="username">USERNAME</label>
+        <input
+          class="username"
+          type="text"
+          placeholder="Enter Email ID or Mobile Number *"
+        />
+        <label for="" class="password-label">PASSWORD</label>
+        <input
+          class="password-input"
+          type="password"
+          placeholder="Enter Password *"
+        />
+        <p class="signup">Don't have an account? <a href="#">Sign Up</a></p>
+        <button class="login-btn flex">Login</button>
+        <p class="Get-help">
+          Facing trouble logging in? <a href="#">Get Help</a>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

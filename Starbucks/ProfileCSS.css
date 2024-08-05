@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+/* NavBar */
+
+nav {
+  padding-block: 12px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 5;
+}
+
+.nav-header {
+  justify-content: space-between;
+}
+
+.nav-header a {
+  color: rgb(125, 123, 123);
+}
+
+.StarLogo {
+  width: 2.5rem;
+}
+
+.nav-links li a {
+  padding: 2px 12px 10px 12px;
+  margin-left: 40px;
+}
+
+.nav-links li :focus {
+  padding: 2px 12px 10px 12px;
+  border-bottom: 2px solid darkgreen;
+  font-weight: 600;
+}
+
+.nav-header-links ul {
+  font-size: 17px;
+}
+
+.nav-input-main-header {
+  margin-right: 100px;
+  max-width: 400px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.search-icon {
+  padding: 10px;
+  min-width: 40px;
+  font-size: 18px;
+  color: rgb(189, 188, 188);
+}
+
+.searchBar {
+  border-radius: 50px;
+  width: 260px;
+  height: 38px;
+  padding-block: 15px;
+  padding-left: 40px;
+  box-shadow: 0px 0px 3px 0.1px rgb(189, 188, 188);
+  border: none;
+}
+
+.nav-right-corner {
+  flex-basis: 300px;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-right-corner input {
+  padding-left: 40px;
+}
+
+.nav-right-corner ::placeholder {
+  color: rgb(189, 188, 188);
+}
+
+.nav-profile-logo-container {
+  padding-right: 5px;
+}
+
+.Nav-profile-logo {
+  width: 30px;
+}
+
+/* Profile-Hero_section */
+
+.profile-hero-section {
+  margin-top: 30px;
+  background-color: #faf6ee;
+  width: 100%;
+  height: 500px;
+}
+
+.profile-leaf {
+  margin-top: -30px;
+}
+
+.hero-profile-slot {
+  flex-direction: column;
+  margin-top: -80px;
+  align-items: center;
+}
+
+.hero-profile-slot h1 {
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 8px 30px;
+  font-size: 16px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  background-color: black;
+}
+
+.profile-hero-img {
+  border: 3px solid rgb(121, 205, 12);
+  border-radius: 50%;
+  padding: 5px;
+  width: 13rem;
+}
+
+.dots-profile-img {
+  position: absolute;
+  right: 0;
+  bottom: 160px;
+}
+/* Help Center */
+
+#help-selector {
+  margin-top: 20px;
+  width: 100%;
+  height: 60px;
+  font-size: 20px;
+  padding-left: 50px;
+}
+
+.help-center-img {
+  width: 20px;
+  position: absolute;
+  bottom: 80px;
+  left: 130px;
+}
+
+select {
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+/* Footer */
+
+/* Footer Header */
+
+.footer-section {
+  margin-top: 50px;
+  background-color: #0e382c;
+  padding-block: 50px;
+  color: white;
+}
+
+.footer-section a {
+  color: white;
+}
+
+.footer-header-content {
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.footer-web-logo-img {
+  width: 60px;
+}
+
+.footer-info-tag {
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 40px;
+}
+
+.footer-header-text {
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.footer-social-links {
+  gap: 40px;
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.footer-social-links i {
+  color: white;
+}
+/* Download Section */
+
+.download-source {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.download-img {
+  width: 200px;
+}
+
+/* Footer Bottom */
+
+.sub-footer-section {
+  margin-top: 25px;
+}
+
+.sub-footer-main {
+  justify-content: space-between;
+}
+
+.sub-footer-box1 a {
+  padding-right: 30px;
+}
+
+/* End */

@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1300px;
+  margin-inline: auto;
+}
+
+/* NavBar */
+
+nav {
+  padding-block: 12px;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  position: sticky;
+  top: 0px;
+  background-color: white;
+  z-index: 5;
+}
+
+.nav-header {
+  justify-content: space-between;
+}
+
+.nav-header a {
+  color: rgb(125, 123, 123);
+}
+
+.StarLogo {
+  width: 2.5rem;
+}
+
+.nav-links li a {
+  padding: 2px 12px 10px 12px;
+  margin-left: 40px;
+}
+
+.nav-links li :focus {
+  padding: 2px 12px 10px 12px;
+  border-bottom: 2px solid darkgreen;
+  font-weight: 600;
+}
+
+.nav-header-links ul {
+  font-size: 17px;
+}
+
+.nav-input-main-header {
+  margin-right: 100px;
+  max-width: 400px;
+}
+
+.input-icons i {
+  position: absolute;
+}
+
+.search-icon {
+  padding: 10px;
+  min-width: 40px;
+  font-size: 18px;
+  color: rgb(189, 188, 188);
+}
+
+.searchBar {
+  border-radius: 50px;
+  width: 260px;
+  height: 38px;
+  padding-block: 15px;
+  padding-left: 40px;
+  box-shadow: 0px 0px 3px 0.1px rgb(189, 188, 188);
+  border: none;
+}
+
+.nav-right-corner {
+  flex-basis: 300px;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-right-corner input {
+  padding-left: 40px;
+}
+
+.nav-right-corner ::placeholder {
+  color: rgb(189, 188, 188);
+}
+
+.nav-profile-logo-container {
+  padding-right: 5px;
+}
+
+.Nav-profile-logo {
+  width: 30px;
+}
