@@ -428,9 +428,9 @@ footer {
 
 /* Media Query */
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .container {
-    width: 350px;
+    width: 300px;
   }
 
   .col-15 {
