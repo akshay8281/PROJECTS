@@ -513,6 +513,13 @@ footer {
     font-size: 22px;
   }
 
+  .explore-section-main {
+    width: 70%x;
+    padding: 0 20px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
   .slider-1-round-img,
   .slider-2-round-img {
     width: 180px;
