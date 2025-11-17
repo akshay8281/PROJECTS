@@ -201,8 +201,10 @@ ul li {
 
 .rectangle-slot {
   height: 320px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.829)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.829)
+    ),
     url("./Assets_2/Winners_Zomato.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -217,22 +219,27 @@ ul li {
   cursor: pointer;
 }
 
-
 .rectangle-slot:nth-child(2) {
-  background-image: linear-gradient(rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.829)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.829)
+    ),
     url("./Assets_2/NewlyOpen.jpg");
 }
 
 .rectangle-slot:nth-child(3) {
-  background-image: linear-gradient(rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.829)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.829)
+    ),
     url("./Assets_2/GreatBuffets.jpg");
 }
 
 .rectangle-slot:nth-child(4) {
-  background-image: linear-gradient(rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.829)),
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.829)
+    ),
     url("./Assets_2/Best_Luxury.jpg");
 }
 
@@ -594,7 +601,7 @@ footer {
 
   .selectors {
     padding: 8px 0px 8px 8px;
-    font-size: 1.0rem;
+    font-size: 1rem;
   }
 
   .explore-section {
@@ -631,12 +638,11 @@ footer {
     padding: 12px;
     font-size: 16px;
   }
-
 }
 
 /* Media Query 576 */
 
-@media(min-width:576px) {
+@media (min-width: 576px) {
   .container {
     width: 520px;
   }
@@ -769,11 +775,9 @@ footer {
   }
 }
 
-
 /* Media Query 768 */
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .container {
     width: 720px;
   }
@@ -844,7 +848,6 @@ footer {
   .card-left-text h3 {
     font-size: 20px;
   }
-
 
   .selectors {
     padding: 10px 0px 10px 10px;
@@ -954,7 +957,6 @@ footer {
     padding: 15px;
     font-size: 20px;
   }
-
 }
 
 /* Media Query 1200 */
@@ -1082,5 +1084,4 @@ footer {
   .card-container-box {
     padding: 20px 12px;
   }
-
 }
