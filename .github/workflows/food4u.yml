@@ -1,7 +1,9 @@
 name: Deploy FOOD4U
 
 on:
-  workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
@@ -14,9 +16,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy FOOD4U to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./FOOD4U
           publish_branch: gh-pages
+          destination_dir: food4u
