@@ -25,6 +25,12 @@ Below is an example for deploying the **FOOD4U** project:
 1. `git subtree split --prefix=FOOD4U -b food4u-pages`
 2. `git push origin food4u-pages`
 
+This will generate a branch containing only the contents of the `FoodMart` folder and push it to GitHub, enabling you to configure GitHub Pages for deployment.
+#### Commands for Deployment (Live Project)
+
+1. `git subtree split --prefix=FoodMart -b foodmart-pages`
+2. `git push origin foodmart-pages`
+
 This will generate a branch containing only the contents of the `FOOD4U` folder and push it to GitHub, enabling you to configure GitHub Pages for deployment.
 
 ---
