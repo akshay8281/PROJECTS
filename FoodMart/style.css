@@ -66,7 +66,7 @@ ul li {
 /* Navbar */
 
 .section-one {
-  background-image: url(../FoodMart/Assets/Home_page.png);
+  background-image: url(Assets/Home_page.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -437,7 +437,7 @@ ul li {
       rgba(255, 255, 255, 0.778),
       rgba(255, 255, 255, 0.471)
     ),
-    url("../FoodMart/Assets/Home_page.png");
+    url("Assets/Home_page.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
