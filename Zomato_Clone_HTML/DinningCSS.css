@@ -205,7 +205,7 @@ ul li {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 0.829)
     ),
-    url("./Assets_2/Winners_Zomato.jpg");
+    url("Assets_2/Winners_Zomato.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -224,7 +224,7 @@ ul li {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 0.829)
     ),
-    url("./Assets_2/NewlyOpen.jpg");
+    url("Assets_2/NewlyOpen.jpg");
 }
 
 .rectangle-slot:nth-child(3) {
@@ -232,7 +232,7 @@ ul li {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 0.829)
     ),
-    url("./Assets_2/GreatBuffets.jpg");
+    url("Assets_2/GreatBuffets.jpg");
 }
 
 .rectangle-slot:nth-child(4) {
@@ -240,7 +240,7 @@ ul li {
       rgba(255, 255, 255, 0),
       rgba(0, 0, 0, 0.829)
     ),
-    url("./Assets_2/Best_Luxury.jpg");
+    url("Assets_2/Best_Luxury.jpg");
 }
 
 /* Nav-Buttons */
