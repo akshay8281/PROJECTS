@@ -1,4 +1,4 @@
-/* @media (min-width: 992px) {
+@media (min-width: 992px) {
     .container {
         width: 950px;
         margin: 0 auto;
@@ -59,4 +59,4 @@
     .col-25 {
         width: 25%;
     }
-} */
+}
