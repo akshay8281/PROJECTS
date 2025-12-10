@@ -1,23 +1,28 @@
-name: Deploy Zomato_Clone_HTML
+name: Deploy All Projects
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 permissions:
   pages: write
   id-token: write
+  contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
+      # Upload the entire repo so all folders are deployed
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./Zomato_Clone_HTML
+          path: ./
 
   deploy:
     needs: build
