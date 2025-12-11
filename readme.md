@@ -1,36 +1,118 @@
 # Deploy the Project in GitHub
 
-## Using a New Branch in the Main PROJECTS Repository
+## Step 1: Update the Main GitHub Repository
 
-### Step 1: Update the Main GitHub Repository
+### Run the following commands to ensure your repository is fully updated:
 
-Ensure your repository is fully up to date by running the following commands:
+** bash **
 
-1. `git init`
-2. `git add .`
-3. `git status`
-4. `git commit -m "Changes"`
-5. `git push`
-
----
-
-### Step 2: Create a New Branch for a Specific Sub-Project and Deploy It
-
-To deploy an individual sub-project stored inside your main repository, create a dedicated branch using `git subtree`. This approach allows deployment without moving files out of their folder.
-
-Below is an example for deploying the **FOOD4U** project:
-
-#### Commands for Deployment (Live Project)
-
-1. `git subtree split --prefix=FOOD4U -b food4u-pages`
-2. `git push origin food4u-pages`
-
-This will generate a branch containing only the contents of the `FoodMart` folder and push it to GitHub, enabling you to configure GitHub Pages for deployment.
-#### Commands for Deployment (Live Project)
-
-1. `git subtree split --prefix=FoodMart -b foodmart-pages`
-2. `git push origin foodmart-pages`
-
-This will generate a branch containing only the contents of the `FOOD4U` folder and push it to GitHub, enabling you to configure GitHub Pages for deployment.
+- git init
+- git add .
+- git status
+- git commit -m "Changes"
+- git push
 
 ---
+
+Deploy Projects Using Workflow
+
+In the main PROJECTS repository:
+
+A .github/workflows directory is created.
+
+Inside it, the deploy-all.yml file deploys all project folders to GitHub Pages.
+
+An index.html file is added to act as a cover page and confirm deployment.
+
+'''
+Repository Structure
+PROJECTS/
+├── index.html
+└── .github/
+└── workflows/
+└── deploy-all.yml
+'''
+
+## Workflow File
+
+** File Location **
+
+** PROJECTS/.github/workflows/deploy-all.yml **
+
+```
+name: Deploy All Projects
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  pages: write
+  id-token: write
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Upload the entire repo so all folders are deployed
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+
+## Index File
+File Location
+
+** PROJECTS/index.html **
+
+```
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects Index</title>
+</head>
+<body>
+    <h1>Welcome to My Projects</h1>
+    <p>Select a project folder to view its live version.</p>
+</body>
+</html>
+```
+
+## URLS for All Projects stored in PROJECTS Repository
+
+## Project URLs
+
+** Below are the live URLs for all projects stored inside the main PROJECTS repository. **
+
+## Main Directory
+
+- Main Link - https://akshay8281.github.io/PROJECTS/
+- FOOD4U - https://akshay8281.github.io/PROJECTS/FOOD4U/
+- FoodMart - https://akshay8281.github.io/PROJECTS/FoodMart/
+- Guess_Game_JS - https://akshay8281.github.io/PROJECTS/Guess_Game_JS/
+- JS_Assessment_toDoList - https://akshay8281.github.io/PROJECTS/JS_Assessment_toDoList/
+- Myntra - https://akshay8281.github.io/PROJECTS/Myntra/
+- Restaurant - https://akshay8281.github.io/PROJECTS/Restaurant/
+- Starbucks - https://akshay8281.github.io/PROJECTS/Starbucks/
+- Tic_Tac_Toe_Game_JS - https://akshay8281.github.io/PROJECTS/Tic_Tac_Toe_Game_JS/
+- UsabilityHub - https://akshay8281.github.io/PROJECTS/UsabilityHub/
+- Zomato_Clone_HTML - https://akshay8281.github.io/PROJECTS/Zomato_Clone_HTML/
