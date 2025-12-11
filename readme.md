@@ -109,7 +109,7 @@ File Location
 - FOOD4U - https://akshay8281.github.io/PROJECTS/FOOD4U/
 - FoodMart - https://akshay8281.github.io/PROJECTS/FoodMart/
 - Guess_Game_JS - https://akshay8281.github.io/PROJECTS/Guess_Game_JS/
-- JS_Assessment_toDoList - https://akshay8281.github.io/PROJECTS/JS_Assessment_toDoList/
+- Todo_List_JS - https://akshay8281.github.io/PROJECTS/Todo_List_JS/
 - Myntra - https://akshay8281.github.io/PROJECTS/Myntra/
 - Restaurant - https://akshay8281.github.io/PROJECTS/Restaurant/
 - Starbucks - https://akshay8281.github.io/PROJECTS/Starbucks/
