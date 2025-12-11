@@ -1,0 +1,90 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            background-color: lightgrey;
+            color: darkblue;
+            padding: 1.2rem 0;
+        }
+
+        .heading {
+            text-align: center;
+            margin-block: 30px;
+            font-size: 2rem;
+        }
+
+        .heading h1 {
+            background-color: darkred;
+            padding: 1.2rem 3rem;
+            border-radius: 2rem;
+            color: #fff;
+        }
+
+        .heading p {
+            color: black;
+            font-size: 1.5rem;
+        }
+
+        .title-1 {
+            margin-block: 2rem 1rem;
+        }
+
+        #guess {
+            font-size: 3rem;
+            background-color: darkgreen;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            color: #ffff;
+        }
+
+        #guessField {
+            margin-block: 2rem;
+            width: 8rem;
+            height: 2rem;
+            font-size: 1.5rem;
+            padding: 1.5rem 1.5rem;
+            border-radius: 1rem;
+            border: 2px solid green;
+            text-align: center;
+        }
+
+        .guessSubmit {
+            margin-top: 1rem;
+            padding: .9rem 1.3rem;
+            font-size: 1.2rem;
+            border-radius: 1rem;
+            border: none;
+            color: white;
+            background-color: darkblue;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .guessSubmit:hover {
+            background-color: black;
+        }
+        #newGame{
+            background-color: black;
+            color: white;
+            border-radius: 1rem;
+            margin-top: 2rem;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }

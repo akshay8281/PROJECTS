@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lobster+Two&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #92BDA3;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 95vh;
+}
+
+.game-head {
+    margin-block: 10px;
+    padding: 15px 20px;
+    font-size: 45px;
+    /* color: darkgoldenrod; */
+    color: darkgreen;
+    font-family: 'Courgette', cursive;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 60vmin;
+    width: 60vmin;
+}
+
+.box {
+    height: 17vmin;
+    width: 17vmin;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 0 0 1rem rgb(0, 0, 0, .3);
+    color: darkblue;
+    font-size: 75px;
+    font-weight: 600;
+    background-color: #A8DADC;
+    cursor: pointer;
+}
+
+.reset-btn {
+    margin-top: 30px;
+    background-color: darkred;
+    color: lightcyan;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-family: 'Courgette', cursive;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.new-btn {
+    margin-top: 15px;
+    background-color: darkred;
+    color: lightcyan;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 10px 15px;
+    font-family: 'Courgette', cursive;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.reset-btn:hover,
+.new-btn:hover {
+    background-color: #03045E;
+}
+
+/* Last Styling Step */
+.msgContent {
+    margin-top: 30px;
+}
+
+#msg {
+    color: darkslategray;
+    font-weight: 900;
+    padding: 15px;
+    font-size: 40px;
+}
+
+.hide {
+    display: none;
+}

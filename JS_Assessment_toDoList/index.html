@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <!-- Input field for adding new items -->
+            <input class="add-input" type="text" id="newTodoInput" placeholder="Add New Item">
+
+            <!-- Button to add a new todo item -->
+            <button class="btn" onclick="addTodo()">Add</button>
+
+            <!-- Button to clear the entire todo list -->
+            <button class="btn" onclick="clearTodoList()">Clear All</button>
+        </div>
+
+        <!-- Todo list container -->
+        <ul class="todo-list" id="todoList">
+            <!-- Existing and new todo items will be displayed here -->
+        </ul>
+    </div>
+
+</body>
+<script src="app.js"></script>
+
+</html>
