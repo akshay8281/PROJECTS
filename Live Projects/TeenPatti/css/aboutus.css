@@ -1,0 +1,251 @@
+
+        :root {
+            --text: #0a1f3f;
+            --navy: #0a2f6c;
+            --royal: #2459ff;
+            --page-light: #f7faff;
+            --page-gradient: #e8efff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            background: radial-gradient(circle at top, var(--page-light), var(--page-gradient));
+            color: var(--text);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Arial;
+            margin: 0 auto;
+            /* padding: 0 16px 16px 16px; */
+            width: 100%;
+        }
+
+
+
+        .tp-section {
+            padding: 28px 0;
+            animation: fadeUp .7s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .section-box {
+            background: #ffffff;
+            border-radius: 16px;
+            border: 1px solid rgba(36, 89, 255, .25);
+            box-shadow: 0 6px 24px rgba(0, 0, 0, .08);
+            padding: 18px;
+            transition: .28s ease;
+        }
+
+        .section-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(36, 89, 255, .28);
+        }
+
+        .section-title {
+            color: var(--royal);
+            font-weight: 900;
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        h1.hero-title {
+            color: var(--navy);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .hero-desc {
+            text-align: center;
+            max-width: 950px;
+            margin: auto;
+            color: #3a527c;
+        }
+
+        .footer-bar {
+            background: linear-gradient(180deg, #ffffff, #f1f5ff);
+            border-top: 1px solid rgba(36, 89, 255, .25);
+            padding: 16px;
+            text-align: center;
+            color: #445f92;
+            margin-top: 20px;
+        }
+
+        /* =================== NEO CARDS =================== */
+
+        .neo-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 16px;
+            border: 1px solid rgba(36, 89, 255, .25);
+            box-shadow: 0 18px 40px rgba(10, 47, 108, .18);
+            transition: .35s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .neo-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 28px 60px rgba(36, 89, 255, .3);
+        }
+
+        .neo-tag {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            background: linear-gradient(45deg, #2459ff, #4d80ff);
+            color: #fff;
+            padding: 4px 12px;
+            border-radius: 40px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: .3px;
+            box-shadow: 0 6px 14px rgba(36, 89, 255, .35);
+            z-index: 2;
+        }
+
+        .neo-img {
+            height: 170px;
+            overflow: hidden;
+            border-radius: 14px;
+            margin-bottom: 12px;
+        }
+
+        .neo-img img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            /* show full image */
+            transition: .35s;
+            background: #fff;
+        }
+
+        .neo-card:hover img {
+            transform: scale(1.07);
+        }
+
+        .neo-card h5 {
+            font-weight: 900;
+            color: #0a2f6c;
+            text-align: center;
+        }
+
+        .neo-desc {
+            font-size: 14px;
+            color: #3a527c;
+            max-height: 58px;
+            overflow: hidden;
+            transition: max-height .45s ease;
+        }
+
+        .neo-desc.expanded {
+            max-height: 400px;
+        }
+
+        .view-toggle {
+            background: transparent;
+            border: none;
+            color: #2459ff;
+            font-weight: 700;
+            margin: 8px auto 12px auto;
+            padding: 0;
+            width: fit-content;
+            display: block;
+            transition: .3s;
+        }
+
+        .view-toggle:hover {
+            color: #4d80ff;
+            text-decoration: underline;
+            transform: translateY(-1px);
+        }
+
+        .neo-btn {
+            margin-top: auto;
+            align-self: center;
+            padding: 10px 22px;
+            border-radius: 50px;
+            font-weight: 700;
+            color: #fff;
+            border: none;
+            background: linear-gradient(45deg, rgba(255, 0, 0, 0.67), rgba(0, 0, 128, 0.752));
+            box-shadow: 0 10px 22px rgba(36, 89, 255, .35);
+            transition: .3s;
+            text-align: center;
+        }
+
+        .neo-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 14px 36px rgba(0, 0, 0, 0.325);
+            color: #fff;
+            cursor: pointer;
+        }
+
+        p,
+        li {
+            font-size: 15px;
+            line-height: 1.55;
+        }
+
+        /* ========== MOBILE / TABLET RESPONSIVE ========== */
+        @media (max-width: 992px) {
+            .neo-img {
+                height: 160px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .section-box {
+                padding: 16px;
+            }
+
+            h1.hero-title {
+                font-size: 22px;
+            }
+
+            .section-title {
+                font-size: 17px;
+            }
+
+            p,
+            li {
+                font-size: 14px;
+            }
+
+            .neo-img {
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .neo-img {
+                height: 140px;
+            }
+
+            .tp-section {
+                padding: 22px 0;
+            }
+
+            .section-box {
+                border-radius: 12px;
+            }
+
+            h1.hero-title {
+                font-size: 20px;
+            }
+        }

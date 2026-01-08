@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* This centers the entire page block left and right */
+.page-container {
+  /* max-width: 1400px; */
+  margin: 0 auto;
+  /* center horizontally */
+  /* padding: 0 16px 16px 16px; */
+  box-sizing: border-box;
+
+  min-height: 100%;
+  /* fill viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header height is natural */
+#header-container {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* Main content is vertically & horizontally centered */
+.center-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+/* Footer stays at bottom & is centered */
+#footer {
+  flex-shrink: 0;
+  text-align: center;
+  width: 100%;
+}

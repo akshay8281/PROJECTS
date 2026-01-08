@@ -1,0 +1,262 @@
+:root {
+  --yellowMain: #facc15;
+  --yellowDark: #eab308;
+  --panelBg: #ffffff;
+  --panelBorder: rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f6f8fb;
+  color: #0f172a;
+  overflow-x: hidden;
+}
+
+/* GLOBAL WIDTH LIMITER */
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 18px;
+  width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+h1 {
+  color: #2a52be;
+}
+
+h2 {
+  color: #2a52be;
+}
+
+/* Reveal Fade-Up Animation */
+.reveal,
+.fade-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: all 0.8s ease;
+}
+
+.visible,
+.animate {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* HERO SECTION */
+.hero {
+  position: relative;
+  min-height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+  background-size: contain;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 12px;
+   padding: 0;
+}
+.hero-img {
+   width:100%;
+   height:100%;
+   object-fit:contain;
+}
+
+
+/* Desktop */
+@media (min-width: 769px) {
+   .hero{
+      min-height: 70vh;
+   }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+   .hero{
+      min-height: auto;
+      height: auto;
+      aspect-ratio: 16/9;  /* maintains proportional shrink */
+   }
+}
+.hero h1 {
+  font-size: 3rem;
+}
+
+.floating-btn {
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 38px;
+  border-radius: 40px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  background: linear-gradient(90deg, #ff7b00, #ff006e, #7f00ff, #00c9ff);
+  background-size: 400% 400%;
+  animation: smoothGradient 8s linear infinite;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+@keyframes smoothGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.floating-btn:hover {
+  transform: translateX(-50%) translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.55);
+}
+
+/* RESPONSIBLE GAMING PANELS */
+.panel {
+  background: var(--panelBg);
+  border: 1px solid var(--panelBorder);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.15);
+  transition: 0.35s;
+}
+
+.panel:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+}
+
+.panel h5 {
+  color: #2a52be;
+  font-weight: 800;
+}
+
+.intro-para,
+p {
+  text-align: left;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  color: #333;
+}
+
+.tick-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.tick-list li {
+  margin-bottom: 12px;
+  display: flex;
+  gap: 10px;
+  text-align: left;
+}
+
+.tick-list i {
+  color: #22c55e;
+  font-size: 1.2rem;
+  margin-top: 3px;
+}
+
+/* SECURITY QUESTIONS */
+.question-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: var(--panelBg);
+  border-radius: 16px;
+  padding: 18px 20px;
+  border: 1px solid var(--panelBorder);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.15);
+  transition: all 0.35s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.25);
+}
+
+.serial-badge {
+  min-width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--yellowMain), var(--yellowDark));
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.final-note {
+  background: #ffffff;
+  border: 1px solid var(--panelBorder);
+  border-radius: 16px;
+  padding: 18px;
+  color: #333;
+}
+
+/* RESPONSIVE TWEAKS */
+@media (max-width: 992px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .floating-btn {
+    padding: 12px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 55vh;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .question-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 50vh;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .floating-btn {
+    padding: 10px 22px;
+  }
+}

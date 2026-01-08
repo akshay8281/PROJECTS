@@ -1,0 +1,392 @@
+/* ================= GLOBAL RESPONSIVE TYPOGRAPHY ================= */
+:root {
+  --text: #0a1f3f;
+  --navy: #0a2f6c;
+  --royal: #2459ff;
+  --soft-blue: #eef3ff;
+  --panel: #ffffffef;
+  --border: #cfd9ff;
+  --gold: #f2b703;
+
+  /* Headings */
+  --fs-h1: clamp(1.8rem, 3vw + 1rem, 3.4rem);
+  --fs-h2: clamp(1.6rem, 2.6vw + 1rem, 3rem);
+  --fs-h3: clamp(1.4rem, 2vw + 1rem, 2.4rem);
+  --fs-h4: clamp(1.2rem, 1.5vw + 0.8rem, 1.9rem);
+  --fs-h5: clamp(1.05rem, 1.2vw + 0.8rem, 1.5rem);
+  --fs-h6: clamp(1rem, 1vw + 0.8rem, 1.2rem);
+
+  /* Body Text */
+  --fs-body: clamp(0.95rem, 0.6vw + 0.8rem, 1.1rem);
+
+  /* Small Text */
+  --fs-small: clamp(0.8rem, 0.4vw + 0.7rem, 0.95rem);
+}
+
+/* Heading assignment */
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+h3 {
+  font-size: var(--fs-h3);
+}
+
+h4 {
+  font-size: var(--fs-h4);
+}
+
+h5 {
+  font-size: var(--fs-h5);
+}
+
+h6 {
+  font-size: var(--fs-h6);
+}
+
+/* Text */
+p,
+li {
+  font-size: var(--fs-body);
+}
+
+.small-text {
+  font-size: var(--fs-small);
+}
+
+.accordion-button {
+  font-size: var(--fs-h5);
+}
+
+.accordion-body {
+  font-size: var(--fs-body);
+}
+
+/* ================= PAGE LAYOUT ================= */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: linear-gradient(140deg, #dfeaff, #cfdcff, #e8eeff);
+  background-attachment: fixed;
+  margin: 0;
+  /* padding: 0 20px; */
+}
+
+.page-wrapper {
+  max-width: 1400px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 35px 0;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+/* ================= PANELS ================= */
+.panel {
+  background: var(--panel);
+  border-radius: 22px;
+  padding: 35px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeUp 0.8s ease both;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Remove padding ONLY for the swiper panel */
+#teen-patti-apk .panel {
+  padding: 0;
+}
+
+.panel:hover {
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.18);
+  transform: translateY(-3px);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Headings appearance */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--navy);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* ================= SWIPER ================= */
+.swiper {
+  width: 100%;
+  height: 480px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+@media (max-width: 992px) {
+  .swiper {
+    height: 360px;
+  }
+}
+
+@media (max-width: 576px) {
+  .swiper {
+    height: 260px;
+  }
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  transition: 0.5s ease;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= DOWNLOAD BUTTON ================= */
+.download-container {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.download-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 20px 55px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  z-index: -1;
+  transition: 0.3s ease;
+}
+
+.download-btn {
+  position: relative;
+  padding: 12px 40px;
+  border-radius: 40px;
+  border: none;
+  font-weight: 900;
+  color: #fff;
+  background: linear-gradient(45deg, #2459ff, #6f8cff);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 0.35s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #1b46d1, #5878ff);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 578px) {
+  .download-btn {
+    padding: 8px 20px;
+    font-weight: 800;
+  }
+}
+
+/* ================= CARDS ================= */
+.gradient-card {
+  padding: 22px;
+  border-radius: 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: 0.35s ease;
+}
+
+.gradient-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.2);
+}
+
+.gradient-card h5 {
+  color: var(--royal);
+  font-weight: 900;
+  margin-bottom: 8px;
+  text-align: left;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.gradient-card h5:hover {
+  color: var(--gold);
+  transform: translateX(4px);
+}
+
+.gradient-card p {
+  flex-grow: 1;
+  text-align: left;
+}
+
+/* ================= ACCORDION ================= */
+.accordion-item {
+  border: 1px solid var(--border);
+  border-radius: 10px !important;
+  margin-bottom: 12px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 8px 20px rgba(36, 89, 255, 0.15);
+  border-color: var(--royal);
+  transform: scale(1.005);
+}
+
+.accordion-button {
+  font-weight: 600;
+  background: #f4f6ff;
+  color: var(--navy);
+  transition: background 0.4s ease, color 0.4s ease;
+  padding: 1.2rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(90deg, #e8edff 0%, #ffffff 100%);
+  color: #2459ff;
+}
+
+.accordion-collapse {
+  transition: height 0.1s ease-in-out;
+}
+.collapsing {
+  transition: height 0.1s ease;
+}
+@media (min-width: 768px) {
+  .gradient-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.accordion-body {
+  padding: 20px 30px;
+}
+
+/* FAQ numbered headings */
+#accordionTopGames .accordion-body {
+  counter-reset: game;
+}
+
+#accordionTopGames .accordion-body h6 {
+  position: relative;
+  padding-left: 32px;
+  text-align: left;
+  font-weight: 800;
+  margin-top: 15px;
+}
+
+#accordionTopGames .accordion-body h6::before {
+  counter-increment: game;
+  content: counter(game) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #2459ff;
+  font-weight: 900;
+}
+
+/* ================= TABLE ================= */
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.14);
+  font-size: 12px;
+}
+
+th,
+td {
+  border: 1px solid var(--border);
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background: #eaf0ff;
+  color: var(--navy);
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+tbody tr:hover {
+  background: #f4f6ff;
+}
+
+/* ================= RESPONSIVE TWEAKS ================= */
+@media (min-width: 992px) {
+  .page-wrapper {
+    max-width: 100%;
+  }
+
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .panel {
+    padding: 20px;
+  }
+
+  body {
+    padding: 0;
+  }
+}

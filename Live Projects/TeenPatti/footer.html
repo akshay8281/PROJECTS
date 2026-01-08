@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teen Patti Premium Footer — Combined Layout</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/x-icon" href="/assets/Logo.webp">
+
+
+</head>
+
+<body>
+
+    <footer class="footer-wrapper">
+        <div class="container">
+
+            <div class="row gy-4">
+
+                <div class="col-lg-4">
+                    <div class="footer-card h-100">
+
+                        <img src="/assets/Logo.webp" onclick="gtag('event', 'download_click', {
+     'event_category': 'APK',
+     'event_label': 'HU777'
+   });" onclick="redirectToTeenPatti()" loading="lazy" alt="Teen Patti Logo" class="footer-logo-img">
+
+                        <a href="index.html" class="footer-logo">Teen Patti Master</a>
+
+                        <p class="footer-desc">
+                            Premium Teen Patti experience with stylish design and a clean modern interface.
+                        </p>
+
+                        <p class="footer-sponsored">
+                            Promoted By
+                            <strong>
+                                <a href="https://apkgame777.com/" target="_blank">www.apkgame777.com</a>
+                            </strong>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="footer-card h-100 text-center">
+
+                        <h5 class="footer-title">Explore</h5>
+
+                        <div class="footer-links-row">
+                            <a href="index.html"><i class="bi bi-house-door"></i> Home</a>
+                            <a href="download.html"><i class="bi bi-download"></i> Download</a>
+                            <a href="brand.html"><i class="bi bi-star"></i> Brand</a>
+                            <a href="privacy.html"><i class="bi bi-shield-lock"></i> Privacy</a>
+                            <a href="blog.html"><i class="bi bi-journal-text"></i> Blog</a>
+                            <a href="aboutus.html"><i class="bi bi-people"></i> About Us</a>
+                        </div>
+
+                        <hr class="mt-4 mb-4" style="opacity:.25;">
+
+                        <h5 class="footer-title">Stay Connected</h5>
+
+                        <div class="footer-social">
+                            <a href="#"><i class="bi bi-telegram"></i> Telegram Channel</a>
+
+                            <a href="mailto:apkgame7777@apkgame777.com">
+                                <i class="bi bi-envelope"></i>
+                                connect-us@apkgame777.com
+                            </a>
+                        </div>
+
+                        <p class="footer-desc mt-2 text-center">
+                            Join our community for updates and offers.
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-line"></div>
+
+            <p class="footer-copy">
+                © 2026 Teen Patti. All Rights Reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- ACTIVE PAGE SCRIPT -->
+    <script>
+        window.addEventListener("load", function () {
+            const current = new URL(window.location.href);
+            let currentPath = current.pathname.toLowerCase();
+
+            if (currentPath.endsWith("/")) currentPath += "index.html";
+
+            currentPath = currentPath.replace(/\/$/, "");
+
+            const currentFile =
+                currentPath.substring(currentPath.lastIndexOf("/") + 1) || "index.html";
+
+            document.querySelectorAll("a").forEach(link => {
+
+                const linkURL = new URL(link.getAttribute("href"), window.location.origin);
+                let linkPath = linkURL.pathname.toLowerCase().replace(/\/$/, "");
+
+                const linkFile =
+                    linkPath.substring(linkPath.lastIndexOf("/") + 1) || "index.html";
+
+                if (currentFile === linkFile) {
+                    link.classList.add("active");
+                    link.setAttribute("aria-current", "page");
+                }
+            });
+        });
+    </script>
+    <script src="/include.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

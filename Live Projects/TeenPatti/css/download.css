@@ -1,0 +1,227 @@
+:root {
+  --text: #072044;
+  --navy: #123a85;
+  --royal: #2d66ff;
+  --panel: #ffffffeb;
+  --border: #d7e1ff;
+}
+
+/* ========= GLOBAL LAYOUT ========= */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    rgba(210, 222, 255, 0.7),
+    rgba(240, 245, 255, 0.9),
+    rgba(215, 225, 255, 0.7)
+  );
+  position: relative;
+  /* padding: 0 15px 15px 15px; */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(220, 230, 255, 0.55),
+    rgba(240, 245, 255, 0.75)
+  );
+  backdrop-filter: blur(14px);
+  z-index: -1;
+}
+
+/* Max width wrapper */
+.page-wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+/* Set 20px top/bottom padding for the first 3 sections only */
+.page-wrapper section:nth-of-type(1),
+.page-wrapper section:nth-of-type(2),
+.page-wrapper section:nth-of-type(3) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section {
+  padding: 70px 0;
+}
+
+/* ========= PANELS ========= */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 40px 25px;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+}
+
+.panel:hover {
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.12);
+}
+
+/* ========= HEADINGS ========= */
+.section-title {
+  font-weight: 800;
+  text-align: center;
+  color: var(--navy);
+  transition: 0.3s ease;
+  padding: 0 0 25px 0;
+}
+
+.section-title:hover {
+  color: var(--royal);
+  transform: translateY(-2px);
+}
+
+/* ========= DOWNLOAD BUTTON ========= */
+.download-btn {
+  padding: 14px 42px;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(135deg, #d23200, #ff5b29, #ff7a00);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35),
+    inset 0 3px 6px rgba(255, 255, 255, 0.25);
+  transition: 0.45s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.45),
+    inset 0 3px 6px rgba(255, 255, 255, 0.35);
+}
+
+/* ========= FEATURE CARDS ========= */
+.feature-card {
+  background: #ffffffed;
+  border: 1px solid var(--border);
+  border-radius: 34px 12px 34px 12px;
+  padding: 25px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  transition: 0.35s ease;
+  height: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 36px rgba(0, 0, 0, 0.12);
+  border-radius: 46px 14px 46px 14px;
+}
+
+.feature-card h5 {
+  color: var(--navy);
+}
+
+.feature-card:hover h5 {
+  color: var(--royal);
+}
+
+p {
+  color: #2e4269;
+  margin-bottom: 0;
+}
+
+/* ========= STEP BOX ========= */
+.step-box {
+  background: #ffffffed;
+  padding: 18px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.08);
+  transition: 0.35s ease;
+}
+
+.step-box:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.12);
+}
+
+.step-number {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  color: #fff;
+  background-size: 300% 300%;
+  animation: flow 6s ease infinite;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.18);
+}
+
+@keyframes flow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ========= REVEAL ========= */
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: 1s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 991px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-wrapper {
+    padding: 0 14px;
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .panel {
+    padding: 24px 16px;
+  }
+
+  .step-number {
+    width: 58px;
+    height: 58px;
+    font-size: 19px;
+  }
+
+  .download-btn {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+}

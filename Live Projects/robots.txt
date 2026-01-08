@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /.git/
+
+Sitemap: https://apkgame777.com/sitemap.xml
