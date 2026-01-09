@@ -1,208 +1,221 @@
+:root {
+  --text: #0a1f3f;
+  --navy: #0a2f6c;
+  --royal: #2459ff;
+}
 
-        :root {
-            --text: #0a1f3f;
-            --navy: #0a2f6c;
-            --royal: #2459ff;
-        }
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #f7faff, #e8efff, #dbe6ff);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+    "Helvetica Neue", Arial;
+  color: var(--text);
+}
 
-        body {
-            margin: 0;
-            background: radial-gradient(circle at top, #f7faff, #e8efff, #dbe6ff);
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial;
-            color: var(--text);
-        }
+.footer-wrapper {
+  background: linear-gradient(180deg, #ffffff, #f1f5ff);
+  padding: 30px 0 0 0;
+  position: relative;
+  overflow: hidden;
+}
 
-        .footer-wrapper {
-            background: linear-gradient(180deg, #ffffff, #f1f5ff);
-            padding: 30px 0 0 0;
-            position: relative;
-            overflow: hidden;
-        }
+.footer-wrapper::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+  height: 420px;
+  background: radial-gradient(
+    circle,
+    rgba(79, 210, 255, 0.25),
+    transparent 75%
+  );
+  filter: blur(90px);
+}
 
-        .footer-wrapper::before {
-            content: '';
-            position: absolute;
-            top: -80px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 420px;
-            height: 420px;
-            background: radial-gradient(circle, rgba(79, 210, 255, .25), transparent 75%);
-            filter: blur(90px);
-        }
+.footer-card {
+  background: linear-gradient(145deg, #ffffff, #f4f7ff);
+  border: 1px solid rgba(36, 89, 255, 0.25);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+  transition: 0.35s;
+  will-change: transform;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-        .footer-card {
-            background: linear-gradient(145deg, #ffffff, #f4f7ff);
-            border: 1px solid rgba(36, 89, 255, .25);
-            border-radius: 18px;
-            padding: 25px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, .06);
-            transition: .35s;
-            will-change: transform;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
+.footer-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 0 35px rgba(36, 89, 255, 0.28);
+  border-color: rgba(36, 89, 255, 0.45);
+}
 
-        .footer-card:hover {
-            transform: translateY(-6px) scale(1.01);
-            box-shadow: 0 0 35px rgba(36, 89, 255, .28);
-            border-color: rgba(36, 89, 255, .45);
-        }
+/* -------- LOGO IMAGE (NOW ANIMATED LIKE LINKS) -------- */
+.footer-logo-img {
+  display: block;
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
 
-        /* -------- LOGO IMAGE (NOW ANIMATED LIKE LINKS) -------- */
-        .footer-logo-img {
-            display: block;
-            max-width: 160px;
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            margin-left: auto;
-            margin-right: auto;
+  border-radius: 12px;
+  padding: 6px;
+  transition: 0.25s ease;
+  cursor: pointer;
+}
 
-            border-radius: 12px;
-            padding: 6px;
-            transition: .25s ease;
-            cursor: pointer;
-        }
+.footer-logo-img:hover {
+  transform: scale(1.12);
+  background: rgba(36, 89, 255, 0.12);
+  box-shadow: 0 0 14px rgba(36, 89, 255, 0.35),
+    0 0 22px rgba(79, 210, 255, 0.25);
+}
 
-        .footer-logo-img:hover {
-            transform: scale(1.12);
-            background: rgba(36, 89, 255, .12);
-            box-shadow: 0 0 14px rgba(36, 89, 255, .35),
-                0 0 22px rgba(79, 210, 255, .25);
-        }
+/* ------------------------------------------------------ */
 
-        /* ------------------------------------------------------ */
+.footer-logo {
+  color: var(--royal);
+  font-size: 32px;
+  font-weight: 900;
+  text-decoration: none;
+  display: inline-block;
+}
 
-        .footer-logo {
-            color: var(--royal);
-            font-size: 32px;
-            font-weight: 900;
-            text-decoration: none;
-            display: inline-block;
-        }
+.footer-desc {
+  font-size: 15px;
+  margin-top: 8px;
+  opacity: 0.9;
+}
 
-        .footer-desc {
-            font-size: 15px;
-            margin-top: 8px;
-            opacity: .9;
-        }
+.footer-title {
+  color: var(--royal);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
 
-        .footer-title {
-            color: var(--royal);
-            font-weight: 800;
-            margin-bottom: 12px;
-        }
+.footer-links-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 16px;
+}
 
-        .footer-links-row {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px 16px;
-        }
-
-        /* ===================================
+/* ===================================
            GLOBAL LINK STYLING (ALL <a>)
            =================================== */
-        a {
-            color: var(--navy);
-            text-decoration: none;
-            font-size: 14px;
-            white-space: nowrap;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 6px 10px;
-            border-radius: 10px;
-            transition: .25s ease;
-            will-change: transform;
-        }
+a {
+  color: var(--navy);
+  text-decoration: none;
+  font-size: 14px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  transition: 0.25s ease;
+  will-change: transform;
+}
 
-        a:hover {
-            color: var(--royal);
-            transform: scale(1.12);
-            background: rgba(36, 89, 255, .12);
-            box-shadow: 0 0 14px rgba(36, 89, 255, .35),
-                0 0 22px rgba(79, 210, 255, .25);
-        }
+a:hover {
+  color: var(--royal);
+  transform: scale(1.12);
+  background: rgba(36, 89, 255, 0.12);
+  box-shadow: 0 0 14px rgba(36, 89, 255, 0.35),
+    0 0 22px rgba(79, 210, 255, 0.25);
+}
 
-        /* ACTIVE + FOCUS STATE */
-        a.active,
-        a:focus {
-            color: var(--royal) !important;
-            background: rgba(36, 89, 255, .12) !important;
-            box-shadow: 0 0 14px rgba(36, 89, 255, .35),
-                0 0 22px rgba(79, 210, 255, .25) !important;
-            outline: none;
-            font-weight: 900;
-        }
+/* ACTIVE + FOCUS STATE */
+a.active,
+a:focus {
+  color: var(--royal) !important;
+  background: rgba(36, 89, 255, 0.12) !important;
+  box-shadow: 0 0 14px rgba(36, 89, 255, 0.35),
+    0 0 22px rgba(79, 210, 255, 0.25) !important;
+  outline: none;
+  font-weight: 900;
+}
 
-        .footer-social {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            width: 100%;
-        }
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  width: 100%;
+}
 
-        .footer-sponsored {
-            color: #4f5f88;
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 6px;
-        }
+.footer-sponsored {
+  color: #4f5f88;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 6px;
+}
 
-        .footer-line {
-            border-top: 1px solid rgba(0, 0, 0, .12);
-            margin: 30px 0 15px;
-        }
+.footer-line {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 30px 0 15px;
+}
 
-        .footer-copy {
-            font-size: 13px;
-            opacity: .8;
-            text-align: center !important;
+.footer-copy {
+  font-size: 13px;
+  opacity: 0.8;
+  text-align: center !important;
+}
 
-        }
+.footer-card .footer-logo {
+  display: block;
+  text-align: center;
+}
 
-        .footer-card .footer-logo {
-            display: block;
-            text-align: center;
-        }
+@media (max-width: 1200px) {
+  .footer-logo {
+    font-size: 25px;
+  }
+}
 
+@media (max-width: 992px) {
+  .footer-card {
+    text-align: center;
+  }
 
-        @media(max-width: 1200px) {
-            .footer-logo {
-                font-size: 25px;
-            }
-        }
+  .footer-desc {
+    padding: 0 50px;
+  }
+}
 
-        @media(max-width: 992px) {
-            .footer-card {
-                text-align: center;
-            }
-
-            .footer-desc {
-                padding: 0 50px;
-
-            }
-        }
-
-        @media(max-width: 576px) {
-            /* .footer-wrapper {
+@media (max-width: 576px) {
+  /* .footer-wrapper {
                 padding: 55px 0 0;
             } */
 
-            .footer-logo {
-                font-size: 26px;
-            }
+  .footer-logo {
+    font-size: 26px;
+  }
 
-            .footer-social a {
-                width: 100%;
-                justify-content: center;
-            }
+  .footer-social a {
+    width: 100%;
+    justify-content: center;
+  }
 
-            .footer-links-row a {
-                font-size: 13px;
-            }
-        }
+  .footer-links-row a {
+    font-size: 13px;
+  }
+}
+
+/* ===============================
+   REMOVE <a> HOVER EFFECT FOR LOGO ONLY
+   =============================== */
+.logo-link,
+.logo-link:hover,
+.logo-link:focus {
+  background: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+  padding: 0 !important;
+}

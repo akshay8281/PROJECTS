@@ -96,6 +96,11 @@ section {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35),
     inset 0 3px 6px rgba(255, 255, 255, 0.25);
   transition: 0.45s ease;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .download-btn:hover {
@@ -221,7 +226,7 @@ p {
   }
 
   .download-btn {
-    padding: 10px 20px;
+    padding: 12px 30px;
     font-size: 15px;
   }
 }

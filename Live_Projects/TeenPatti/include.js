@@ -1,32 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // HEADER — cache once for instant loading
-  if (!sessionStorage.headerHTML) {
-    fetch("header.html")
-      .then((r) => r.text())
-      .then((t) => {
-        sessionStorage.headerHTML = t;
-        document.getElementById("header-container").innerHTML = t;
-        loadActiveNav();
-      });
-  } else {
-    document.getElementById("header-container").innerHTML =
-      sessionStorage.headerHTML;
-    loadActiveNav();
-  }
+  // HEADER — no cache
+  fetch("header.html")
+    .then((r) => r.text())
+    .then((t) => {
+      document.getElementById("header-container").innerHTML = t;
+      loadActiveNav();
+    });
 
-  // FOOTER — cache once also
-  if (!sessionStorage.footerHTML) {
-    fetch("footer.html")
-      .then((r) => r.text())
-      .then((t) => {
-        sessionStorage.footerHTML = t;
-        document.getElementById("footer").innerHTML = t;
-        loadActiveFooter(); // <<< RUN AFTER FOOTER LOADS
-      });
-  } else {
-    document.getElementById("footer").innerHTML = sessionStorage.footerHTML;
-    loadActiveFooter(); // <<< RUN AFTER FOOTER LOADS
-  }
+  // FOOTER — no cache
+  fetch("footer.html")
+    .then((r) => r.text())
+    .then((t) => {
+      document.getElementById("footer").innerHTML = t;
+      loadActiveFooter();
+    });
 });
 
 function loadActiveNav() {
@@ -117,4 +104,3 @@ document.addEventListener("DOMContentLoaded", () => {
   updateButtons();
   window.addEventListener("scroll", updateButtons);
 });
-

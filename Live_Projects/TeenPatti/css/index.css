@@ -107,11 +107,22 @@ p {
   padding: 10px 22px;
   border: none;
   transition: 0.25s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  user-select: none;
+  text-align: center;
 }
 
 .btn-blue:hover {
-  box-shadow: 0 0 18px navy;
-  background-color: rgba(13, 13, 214, 0.83);
+  box-shadow: 0 0 18px rgba(0, 0, 128, 0.559);
+  background-color: rgb(35, 101, 4);
+  color: white;
+  font-weight: 900;
 }
 
 .download-floating {
@@ -122,12 +133,23 @@ p {
   font-weight: 700;
   border: none;
   transition: 0.25s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none !important;
+  cursor: pointer;
+
+  transition: 0.25s;
+  appearance: none;
 }
 
 .download-floating:hover {
   transform: scale(1.03);
   box-shadow: 0 0 25px rgba(36, 89, 255, 0.45);
   background-color: navy;
+  color: white !important;
+  font-weight: 900;
 }
 
 .slider-btn-wrap {
@@ -344,8 +366,8 @@ p {
 }
 
 .download-btn {
-  display: block;
-  margin: 15px auto 0 auto;
+  display: inline-flex; /* important for <a> */
+  margin: 15px auto 0;
 }
 
 .site-wrap {
@@ -468,5 +490,22 @@ p {
   .theme-heading::before,
   .theme-heading::after {
     font-size: 15px;
+  }
+  .btn-blue {
+    text-align: center;
+  }
+}
+
+/* ===============================
+   MOBILE FIX — PLAY NOW BUTTON
+   =============================== */
+@media (max-width: 768px) {
+  #masters-games .custom-card a.btn-blue {
+    display: flex !important; /* FIX */
+    justify-content: center !important; /* FIX */
+    align-items: center !important; /* FIX */
+    width: 100% !important;
+    text-align: center;
+    padding: 12px 0;
   }
 }
