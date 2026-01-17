@@ -1,0 +1,283 @@
+/* ===== RESET & BASE ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+  background-size: 200% 200%;
+  font-family: "Segoe UI", sans-serif;
+  animation: bgMove 15s ease infinite;
+  transition: background 0.4s ease;
+  overflow: hidden;
+}
+
+/* ===== THEME VARIABLES ===== */
+:root {
+  --bg: linear-gradient(135deg, #f5f6fa, #e8ecf3);
+  --calc-bg: #ffffff;
+  --btn-bg: #e4e6eb;
+  --text: #000;
+  --display-bg: #f1f3f6;
+  --result: #0a7cff;
+  --panel-bg: #ffffff;
+  --hover: #d0d4da;
+  --history-text: #000;
+}
+
+body.dark-theme {
+  --bg: linear-gradient(135deg, #0c0f14, #1a1f2c);
+  --calc-bg: rgba(255, 255, 255, 0.08);
+  --btn-bg: #2a2f3a;
+  --text: #fff;
+  --display-bg: #000;
+  --result: #00ff9d;
+  --panel-bg: #1a1f2c;
+  --hover: #3a4152;
+  --history-text: #f1f1f1;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes bgMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.page-animate {
+  animation: fadeScale 0.7s ease;
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== FLOATING BACKGROUND ===== */
+.floating-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.floating-bg span {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(0, 210, 255, 0.12);
+  border-radius: 50%;
+  animation: float 25s linear infinite;
+  filter: blur(20px);
+}
+
+body.dark-theme .floating-bg span {
+  background: rgba(0, 255, 157, 0.12);
+}
+
+@keyframes float {
+  from {
+    transform: translateY(110vh);
+  }
+  to {
+    transform: translateY(-150px);
+  }
+}
+
+/* ===== CALCULATOR CONTAINER ===== */
+.calculator {
+  width: 370px;
+  max-width: 96vw;
+  padding: 14px;
+  border-radius: 22px;
+  background: var(--calc-bg);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+  transition: 0.3s;
+}
+
+/* ===== DISPLAY ===== */
+.display-box {
+  background: var(--display-bg);
+  border-radius: 14px;
+  padding: 10px 12px;
+  margin-bottom: 12px;
+}
+
+.expression {
+  font-size: 1.1rem;
+  text-align: right;
+  color: #888;
+  min-height: 1.4em;
+  overflow-wrap: break-word;
+}
+
+.result {
+  font-size: 2.4rem;
+  color: var(--result);
+  text-align: right;
+  font-weight: bold;
+  overflow-x: auto;
+}
+
+/* ===== BUTTON GRID ===== */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 54px;
+  border-radius: 14px;
+  border: none;
+  background: var(--btn-bg);
+  color: var(--text);
+  font-size: 1.15rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== SPECIAL BUTTONS ===== */
+.clear-btn {
+  background: #ff4d4d;
+  color: #fff;
+}
+
+.operator {
+  background: #ffb347;
+  color: #000;
+}
+
+.equals {
+  grid-column: span 4;
+  width: 70%;
+  margin: 6px auto 0;
+  height: 56px;
+  background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+/* ===== HISTORY PANEL ===== */
+.history-panel {
+  position: absolute;
+  inset: 0;
+  background: var(--panel-bg);
+  padding: 14px;
+  transform: translateX(100%);
+  transition: 0.4s ease;
+  color: var(--history-text);
+  overflow: hidden;
+}
+
+.history-panel.active {
+  transform: translateX(0);
+}
+
+.history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.history-clear-btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-size: 0.75rem;
+}
+
+.history-close-btn {
+  background: #7a0000;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+}
+
+#historyList {
+  list-style: none;
+  padding: 0;
+  max-height: calc(100% - 40px);
+  overflow-y: auto;
+}
+
+#historyList li {
+  padding: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* ===== MOBILE OPTIMIZATION ===== */
+@media (max-width: 420px) {
+  .calculator {
+    padding: 12px;
+    border-radius: 18px;
+  }
+
+  .expression {
+    font-size: 1rem;
+  }
+  .result {
+    font-size: 2.1rem;
+  }
+
+  button {
+    height: 48px;
+    font-size: 1.05rem;
+  }
+
+  .equals {
+    height: 52px;
+    width: 85%;
+  }
+}
+
+@media (max-width: 360px) {
+  button {
+    height: 44px;
+    font-size: 1rem;
+  }
+  .result {
+    font-size: 1.9rem;
+  }
+}
