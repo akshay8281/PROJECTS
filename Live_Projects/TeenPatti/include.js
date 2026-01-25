@@ -17,9 +17,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function loadActiveNav() {
-  const path = location.pathname.split("/").pop() || "index.html";
-  document.querySelectorAll(".nav-link").forEach((a) => {
-    if (a.getAttribute("href") === path) a.classList.add("active");
+  const currentPath = window.location.pathname.replace(/\/$/, "") || "/";
+
+  document.querySelectorAll(".nav-link").forEach((link) => {
+    let linkPath = link.getAttribute("href");
+
+    // normalize
+    if (!linkPath.startsWith("/")) linkPath = "/" + linkPath;
+    linkPath = linkPath.replace(/\/$/, "");
+
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+    }
   });
 }
 
@@ -40,7 +50,7 @@ function loadActiveFooter() {
     document.querySelectorAll(".footer-links-row a").forEach((link) => {
       const linkURL = new URL(
         link.getAttribute("href"),
-        window.location.origin
+        window.location.origin,
       );
       let linkPath = linkURL.pathname.toLowerCase().replace(/\/$/, "");
 
@@ -62,7 +72,7 @@ function redirectToTeenPatti() {
   window.open(
     "https://www.earntp.com/m/34jyen?scene=quick_share&f=w&p=wa&l=en&tp=m154",
     "_blank",
-    "noopener"
+    "noopener",
   );
 }
 

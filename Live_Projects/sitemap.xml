@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Teen Patti Master -->
   <url>
     <loc>https://apkgame777.com/</loc>
-    <priority>1.0</priority>
     <changefreq>daily</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://apkgame777.com/hu777/</loc>
+    <loc>https://apkgame777.com/aboutus</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://apkgame777.com/download</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://apkgame777.com/brand</loc>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://apkgame777.com/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://apkgame777.com/blog</loc>
     <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Hu777 Website -->
+  <url>
+    <loc>https://apkgame777.com/hu777/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
